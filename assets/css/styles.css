@@ -365,6 +365,8 @@ img {
 
 .favorites__img {
   width: 200px;
+  scale: 0.8;
+  transition: scale 0.4s, filter 0.4s;
 }
 
 .favorites__leaf-1,
@@ -372,6 +374,8 @@ img {
   width: 70px;
   position: absolute;
   filter: var(--shadow-img);
+  scale: 0;
+  transition: scale 0.4s 0.1s;
 }
 
 .favorites__leaf-1 {
@@ -384,7 +388,19 @@ img {
   left: -0.5rem;
 }
 /* Swiper class */
+.swiper {
+  margin-inline: initial;
+  overflow: visible;
+}
 
+:is(.swiper-slide-active, .swiper-slide-duplicate-active) .favorites__img {
+  scale: 1;
+  filter: var(--shadow-img);
+}
+:is(.swiper-slide-active, .swiper-slide-duplicate-active) .favorites__leaf-1,
+:is(.swiper-slide-active, .swiper-slide-duplicate-active) .favorites__leaf-2 {
+  scale: 1;
+}
 /*=============== CARE ===============*/
 
 /*=============== BANNER ===============*/

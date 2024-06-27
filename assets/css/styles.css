@@ -1065,4 +1065,16 @@ img {
     left: 12rem;
     bottom: -1rem;
   }
+
+  .footer {
+    padding-block: 5rem 3rem;
+  }
+
+  .footer__container {
+    row-gap: 3rem;
+  }
+
+  .scrollup {
+    right: 3rem;
+  }
 }

@@ -84,9 +84,10 @@ const sr = ScrollReveal({
   distance: "60px",
   duration: 2500,
   delay: 300,
+  reset: true, // Animation repeat
 });
 
-sr.reveal(`.home__data, .favorites__container`);
+sr.reveal(`.home__data, .favorites__container, .footer__container`);
 sr.reveal(`.home__circle, .home__img`, { delay: 600, scale: 0.5 });
 sr.reveal(`.home__chips-1, .home__chips-2, .home__chips-3`, {
   delay: 1000,
